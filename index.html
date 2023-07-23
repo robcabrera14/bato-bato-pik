@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bato Bato Pik!</title>
+    <meta name="author" content="RJ Cabrera" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/bato.png" type="image/x-icon" />
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Bato Bato Pik!</h1>
+    <div class="p-1">
+      <div class="container text-center">
+        <div class="d-flex">
+          <div class="col col-1">
+            <h2>
+              <span class="player p1" contenteditable>Ikaw</span>:
+              <span class="score score-1">0</span>
+            </h2>
+            <div class="card card-1">
+              <div class="pick pick-1">
+                <div>
+                  <img src="assets/images/question.png" alt="" class="pick-img pick-1-img" />
+                </div>
+                <h3 class="pick-name pick-1-name"></h3>
+              </div>
+            </div>
+            <span class="status status-1"></span>
+          </div>
+          <div class="col col-2">
+            <h2>
+              <span class="player p2">Kompyuter</span>:
+              <span class="score score-2">0</span>
+            </h2>
+            <div class="card card-2">
+              <div class="pick pick-2">
+                <div>
+                  <img src="assets/images/question.png" alt="" class="pick-img pick-2-img" />
+                </div>
+                <h3 class="pick-name pick-2-name"></h3>
+              </div>
+            </div>
+            <span class="status status-2"></span>
+          </div>
+        </div>
+        <div class="acions-container">
+          <h2>Pumili ng isa</h2>
+          <div class="btn-container">
+            <button class="btn-pick bato">
+              <img src="assets/images/bato.png" alt="" class="btn-pick-img" />
+            </button>
+            <button class="btn-pick papel">
+              <img src="assets/images/papel.png" alt="" class="btn-pick-img" />
+            </button>
+            <button class="btn-pick gunting">
+              <img src="assets/images/gunting.png" alt="" class="btn-pick-img" />
+            </button>
+          </div>
+          <div class="text-center">
+            <button class="btn-reset">I-Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main script -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

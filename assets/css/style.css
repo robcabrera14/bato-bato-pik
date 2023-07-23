@@ -1,0 +1,164 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* css resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general styling */
+:root {
+  --special-clr-1: #7cc5cc;
+  --special-clr-2: #93d8de;
+  --dark-clr-1: #000;
+  --light-clr-1: #fff;
+  --fs-normal: 2rem;
+  --fs-medium: 3rem;
+  --fs-big: 5rem;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* utility classes */
+.p-1 {
+  padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+h1 {
+  font-size: var(--fs-big);
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: var(--fs-normal);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--fs-medium);
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.container .d-flex {
+  gap: 1rem;
+}
+
+.col {
+  border-radius: 1rem;
+  flex: 1 100%;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 0.5rem;
+}
+
+.pick > div {
+  padding: 1rem;
+}
+
+.pick-img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+}
+
+.status {
+  font-size: var(--fs-normal);
+  padding: 1rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn-pick {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 0;
+  background-color: var(--light-clr-1);
+  padding: 1rem;
+  display: block;
+  margin-inline: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5rem;
+}
+
+.btn-pick:hover {
+  background-color: var(--special-clr-1);
+}
+
+.btn-pick-img {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+}
+
+.btn-reset {
+  padding: 1rem 4rem;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: inherit;
+  background-color: var(--special-clr-1);
+  color: var(--light-clr-1);
+  transition: 0.3s ease-in-out all;
+}
+
+.btn-reset:hover {
+  background-color: var(--special-clr-2);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-normal: 1.8rem;
+    --fs-medium: 2.5rem;
+    --fs-big: 4rem;
+  }
+
+  .pick-img {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 359px) {
+  :root {
+    --fs-normal: 1.6rem;
+    --fs-big: 3rem;
+  }
+
+  .pick-img {
+    width: 8rem;
+  }
+}
